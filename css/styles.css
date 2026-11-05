@@ -1,0 +1,193 @@
+.navbar-text{
+   font-family: Humnst777 Blk BT;
+   font-style: italic;
+   font-size: 400%;
+   color: white;
+   -webkit-text-stroke: 2px black;
+}
+
+.navbar {
+   background-color: red;
+}
+
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Contenedor principal que usa Flexbox */
+.layout-contenedor {
+  display: flex;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+  width: 250px;
+  background-color: #1e1e2d;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #3d3d4e;
+  padding-bottom: 10px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: #a2a5b9;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Estilos del contenido principal */
+.contenido-principal {
+  flex: 1; /* Toma el resto del espacio disponible */
+  padding: 40px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* SIDEBAR */
+#sidebar {
+    width: 250px;
+    min-width: 250px;
+    min-height: 100vh;
+    background: #212529;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* ENCABEZADO */
+.sidebar-header {
+    padding: 25px 20px;
+    background: #191c1f;
+    text-align: center;
+}
+
+/* OPCIONES */
+#sidebar ul {
+    padding: 15px 0;
+}
+
+#sidebar ul li a {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+#sidebar ul li a:hover {
+    background: #343a40;
+    color: white;
+}
+
+#sidebar ul li a i {
+    font-size: 20px;
+    min-width: 25px;
+}
+
+/* CONTENIDO */
+#content {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* SIDEBAR RETRAÍDA */
+#sidebar.active {
+    width: 80px;
+    min-width: 80px;
+}
+
+#sidebar.active .sidebar-header h4,
+#sidebar.active ul li a span {
+    display: none;
+}
+
+#sidebar.active ul li a {
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+/* CONTENIDO EXPANDIDO */
+#sidebar.active + #content {
+    width: calc(100% - 80px);
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+
+    #sidebar {
+        margin-left: -250px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+        width: 250px;
+    }
+
+    #sidebar.active .sidebar-header h4,
+    #sidebar.active ul li a span {
+        display: initial;
+    }
+
+    #sidebar.active ul li a {
+        justify-content: flex-start;
+        padding: 15px 20px;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #sidebar.active + #content {
+        width: 100%;
+    }
+}
+
