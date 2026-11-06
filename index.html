@@ -10,17 +10,31 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-      <span class="navbar-text">La Ruta</span>
+<nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <span class="navbar-text">La Ruta</span>
+        </div>
+        <a class="navbar-brand" href="#">
+          <img src="assets/la-calabaza.png" style="width:30%;">
+        </a>
+      </nav>
+  <div class="wrapper">
+
+    <!-- Aquí se carga el sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Contenido principal -->
+    <div id="content">
+      <nav class="navbar bg-light shadow-sm">
+        <button id="sidebarCollapse" class="btn btn-dark">
+          <i class="bi bi-list"></i>
+        </button>
+      </nav>
     </div>
-    <a class="navbar-brand" href="#">
-      <img src="assets/la-calabaza.png" style="width:30%;">
-    </a>
-  </nav>
+  </div>
 
   <!-- jQuery (requerido por Bootstrap 4) -->
-  <script src="assets/js/jquery.slim.min.js"></script>
+  <script src="js/jquery.slim.min.js"></script>
   <!-- Bootstrap JS Bundle (incluye Popper.js) -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
