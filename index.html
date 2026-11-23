@@ -5,45 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Ruta</title>
+
+  <!-- Hojas de estilo -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <!-- Encabezado de la aplicación -->
   <header>
     <nav class="navbar main-header">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <span class="navbar-text header-title">La Ruta</span>
-        <a class="navbar-brand m-0 p-0" href="#">
-          <img src="assets/la-calabaza.svg" alt="Logo Calabaza" class="header-logo">
+        <a class="navbar-brand m-0 p-0" href="#" aria-label="Ir al inicio">
+          <img src="assets/la-calabaza.svg" alt="Logo La Ruta" class="header-logo">
         </a>
       </div>
     </nav>
   </header>
 
-  <aside>
-    <div class="wrapper">
+  <!-- Contenedor principal de la aplicación -->
+  <div class="wrapper">
+    <!-- Barra lateral (cargada dinámicamente desde sidebar.html) -->
+    <aside id="sidebar-container" aria-label="Menú de navegación lateral"></aside>
 
-      <!-- Aquí se carga el sidebar -->
-      <div id="sidebar-container"></div>
-
-      <!-- Contenido principal -->
-      <div id="content">
-        <nav class="navbar">
-          <button id="sidebarCollapse" class="btn btn-dark">
+    <!-- Contenido principal y visor cartográfico -->
+    <main id="content">
+      <nav class="navbar content-navbar bg-white border-bottom shadow-sm">
+        <div class="container-fluid">
+          <button id="sidebarCollapse" class="btn btn-dark" type="button" aria-label="Alternar menú lateral"
+            title="Alternar menú lateral">
             <i class="bi bi-list"></i>
           </button>
-        </nav>
-      </div>
-    </div>
-  </aside>
+        </div>
+      </nav>
 
+      <!-- Sección del mapa Leaflet -->
+      <section id="map-container" aria-label="Mapa interactivo de la ruta">
+        <div id="map"></div>
+      </section>
+    </main>
+  </div>
 
-  <!-- jQuery (requerido por Bootstrap 4) -->
-  <script src="js/jquery.slim.min.js"></script>
-  <!-- Bootstrap JS Bundle (incluye Popper.js) -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts funcionales -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/map.js"></script>
   <script src="js/script.js"></script>
 </body>
 
