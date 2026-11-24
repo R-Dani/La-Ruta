@@ -15,12 +15,12 @@
     }
 
     // Coordenadas centrales iniciales: [Latitud, Longitud] (Tijuana, B.C.)
-    const TIJUANA_CENTER = [32.5149, -116.9725];
-    const DEFAULT_ZOOM = 13;
+    const TECATE = [32.55837733324173, -116.62748688360031];
+    const DEFAULT_ZOOM = 15;
 
     // 1. Inicializar la instancia del mapa
     const map = L.map('map', {
-        center: TIJUANA_CENTER,
+        center: TECATE,
         zoom: DEFAULT_ZOOM,
         zoomControl: true
     });
@@ -33,8 +33,8 @@
     }).addTo(map);
 
     // 3. Marcador de ejemplo inicial
-    const marker = L.marker(TIJUANA_CENTER).addTo(map);
-    marker.bindPopup('<b>La Ruta</b><br>Tijuana, B.C.').openPopup();
+    const marker = L.marker(TECATE).addTo(map);
+    marker.bindPopup('<b>La Ruta</b><br>Tecate, B.C.').openPopup();
 
     // Exponer instancia global para permitir recalcular el tamaño al alternar el sidebar
     window.mapInstance = map;
