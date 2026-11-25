@@ -1,6 +1,6 @@
 # La Ruta
 
-Aplicación web interactiva para la visualización de rutas de transporte público en Tijuana, B.C., desarrollada con una arquitectura modular y diseño responsivo para dispositivos móviles y de escritorio.
+Aplicación web interactiva para la visualización de rutas de transporte público en Tecate, B.C., desarrollada con una arquitectura modular y diseño responsivo para dispositivos móviles y de escritorio.
 
 ## Características
 
