@@ -71,7 +71,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Clinica No 39" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6307893, 32.5441956]
@@ -79,7 +79,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Oxxo Bondad" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6266062, 32.553312]
@@ -87,7 +87,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Juarez" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.630833, 32.5570706]
@@ -95,7 +95,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Soriana" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.632186, 32.5673912]
@@ -103,7 +103,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "CFE" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6361854, 32.571322]
@@ -111,7 +111,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Plaza las Ventas" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6247532, 32.5724063]
@@ -119,7 +119,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Walmart" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6166267, 32.5749527]
@@ -127,7 +127,7 @@ const datosRuta = {
         },
         {
             "type": "Feature",
-            "properties": {},
+            "properties": { "tipo": "parada", "nombre": "Valle Verde" },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-116.6003052, 32.5553413]
